@@ -1,310 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9RYHYE6JX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K9RYHYE6JX');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for YT EduFocus – YouTube Learning Mode Chrome Extension" />
-  <title>Privacy Policy – YT EduFocus</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta name="description" content="Privacy Policy for YT EduFocus Chrome Extension — zero data collected." />
+  <title>Privacy Policy — YT EduFocus</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
     :root {
-      --bg:      #0d1117;
-      --surface: #161b27;
-      --border:  #21283a;
-      --text:    #cdd6f4;
-      --muted:   #7480a0;
-      --accent:  #5b86e5;
-      --green:   #36d196;
+      --ink:    #05080f; --ink2: #0a0f1e; --card: #0d1525;
+      --border: rgba(255,255,255,0.07);
+      --teal:   #00d4c8; --blue: #4a7cff; --orange: #ff6b35;
+      --white:  #f0f4ff; --muted: #5a6a88;
+      --green:  #36d196; --red: #ff6b6b;
+      --font-d: 'Bebas Neue', sans-serif;
+      --font-b: 'DM Sans', sans-serif;
+      --font-m: 'DM Mono', monospace;
     }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+      background: var(--ink);
+      color: var(--white);
+      font-family: var(--font-b);
+      font-size: 16px;
       line-height: 1.7;
-      padding: 0 16px;
+      overflow-x: hidden;
     }
 
-    nav {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 24px 0 0;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .nav-logo  { font-size: 28px; }
-    .nav-title { font-size: 18px; font-weight: 700; color: var(--text); text-decoration: none; }
-    .nav-ver   { font-size: 12px; color: var(--muted); background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2px 10px; margin-left: auto; }
-
-    .hero {
-      max-width: 760px;
-      margin: 36px auto 0;
-      background: linear-gradient(135deg, #1a2a4a 0%, #1a3a40 100%);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 44px 48px;
-    }
-    .hero h1 { font-size: 34px; font-weight: 800; margin-bottom: 10px; }
-    .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero p  { color: var(--muted); font-size: 15px; max-width: 520px; margin-top: 8px; }
-    .meta    { margin-top: 18px; font-size: 12px; color: var(--muted); }
-
-    .tldr {
-      max-width: 760px;
-      margin: 28px auto 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 14px;
-    }
-    .chip {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 18px 20px;
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-    }
-    .chip.green { border-color: rgba(54,209,150,0.35); }
-    .chip.red   { border-color: rgba(255,100,100,0.25); }
-    .chip-icon  { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-    .chip-text strong { font-size: 14px; display: block; color: var(--text); }
-    .chip-text span   { font-size: 12px; color: var(--muted); }
-
-    .content {
-      max-width: 760px;
-      margin: 36px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px 36px;
-    }
-    section h2 {
-      font-size: 19px;
-      font-weight: 700;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .num {
-      background: var(--accent);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 700;
-      border-radius: 50%;
-      width: 24px; height: 24px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    p  { font-size: 15px; margin-bottom: 12px; }
-    p:last-child { margin-bottom: 0; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    li { font-size: 15px; margin-bottom: 6px; }
-
-    .highlight {
-      background: rgba(91,134,229,0.1);
-      border: 1px solid rgba(91,134,229,0.25);
-      border-radius: 10px;
-      padding: 14px 18px;
-      margin: 14px 0;
-      font-size: 14px;
-    }
-    .badge-none {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(54,209,150,0.12);
-      border: 1px solid rgba(54,209,150,0.3);
-      color: var(--green);
-      border-radius: 8px;
-      padding: 4px 10px;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 14px; }
-    th { text-align: left; padding: 10px 14px; background: rgba(255,255,255,0.04); color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--border); }
-    td { padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: top; }
-    tr:last-child td { border-bottom: none; }
-    code { background: rgba(255,255,255,0.07); padding: 2px 6px; border-radius: 5px; font-size: 13px; }
-    a { color: var(--accent); text-decoration: none; }
+    a { color: var(--teal); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    /* ── MESH BG ── */
+    .mesh { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+    .mesh-orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.1; }
+    .orb1 { width: 600px; height: 600px; background: var(--teal); top: -200px; left: -200px; }
+    .orb2 { width: 400px; height: 400px; background: var(--blue); bottom: 10%; right: -100px; }
+
+    .grid-overlay {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      background: rgba(5,8,15,0.75); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner { max-width: 820px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-d); font-size: 20px; letter-spacing: 1px; color: var(--white); text-decoration: none; }
+    .logo-accent { color: var(--teal); }
+    .nav-back { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; transition: color 0.2s; text-decoration: none; }
+    .nav-back:hover { color: var(--white); text-decoration: none; }
+
+    /* ── LAYOUT ── */
+    .page { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; padding: 120px 32px 80px; }
+
+    /* ── HERO ── */
+    .pp-hero { margin-bottom: 56px; padding-bottom: 48px; border-bottom: 1px solid var(--border); }
+
+    .pp-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-m); font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--teal); border: 1px solid rgba(0,212,200,0.3);
+      background: rgba(0,212,200,0.06); padding: 5px 14px; border-radius: 30px;
+      margin-bottom: 24px;
+    }
+
+    .pp-h1 {
+      font-family: var(--font-d);
+      font-size: clamp(52px, 8vw, 80px);
+      line-height: 0.92; letter-spacing: 2px;
+      color: var(--white);
+      margin-bottom: 18px;
+    }
+    .pp-h1 span { -webkit-text-stroke: 2px var(--teal); color: transparent; }
+
+    .pp-intro { font-size: 16px; color: var(--muted); max-width: 580px; font-weight: 300; }
+    .pp-meta  { margin-top: 16px; font-family: var(--font-m); font-size: 11px; color: rgba(255,255,255,0.25); letter-spacing: 0.5px; }
+
+    /* ── TL;DR CHIPS ── */
+    .chips { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 56px; }
+
+    .chip {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 20px 22px;
+      display: flex; gap: 14px; align-items: flex-start;
+      transition: border-color 0.2s;
+    }
+    .chip:hover { border-color: rgba(0,212,200,0.2); }
+    .chip.g { border-color: rgba(54,209,150,0.2); background: rgba(54,209,150,0.03); }
+    .chip.r { border-color: rgba(255,107,107,0.2); background: rgba(255,107,107,0.03); }
+    .chip-ico  { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .chip-text strong { font-size: 14px; font-weight: 700; color: var(--white); display: block; margin-bottom: 3px; }
+    .chip-text span   { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+    /* ── SECTIONS ── */
+    .pp-sections { display: flex; flex-direction: column; gap: 24px; }
+
+    .pp-section {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 32px 36px;
+      transition: border-color 0.2s;
+    }
+    .pp-section:hover { border-color: rgba(0,212,200,0.12); }
+
+    .pp-section h2 {
+      font-family: var(--font-d); font-size: 26px; letter-spacing: 1px;
+      color: var(--white); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 14px;
+    }
+
+    .sec-num {
+      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--teal), var(--blue));
+      color: var(--ink); font-family: var(--font-b); font-size: 13px; font-weight: 800;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+
+    .pp-section p  { font-size: 15px; color: var(--muted); margin-bottom: 12px; }
+    .pp-section p:last-child { margin-bottom: 0; }
+    .pp-section ul { padding-left: 20px; margin-bottom: 12px; }
+    .pp-section li { font-size: 15px; color: var(--muted); margin-bottom: 7px; }
+
+    .highlight {
+      background: rgba(0,212,200,0.06); border: 1px solid rgba(0,212,200,0.18);
+      border-radius: 10px; padding: 14px 18px; margin: 14px 0; font-size: 14px; color: var(--white);
+    }
+    .highlight strong { color: var(--teal); }
+
+    .badge-none {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(54,209,150,0.1); border: 1px solid rgba(54,209,150,0.28);
+      color: var(--green); border-radius: 8px; padding: 4px 12px;
+      font-size: 13px; font-weight: 700;
+    }
+
+    /* Storage table */
+    .data-table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 16px 0; }
+    .data-table th { text-align: left; padding: 10px 14px; background: rgba(255,255,255,0.04); color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--border); }
+    .data-table td { padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: top; color: var(--muted); }
+    .data-table tr:last-child td { border-bottom: none; }
+    code { background: rgba(255,255,255,0.07); padding: 2px 7px; border-radius: 5px; font-family: var(--font-m); font-size: 13px; color: var(--teal); }
+
+    /* ── FOOTER ── */
     footer {
-      max-width: 760px;
-      margin: 48px auto 48px;
-      text-align: center;
-      font-size: 13px;
-      color: var(--muted);
+      position: relative; z-index: 1;
+      max-width: 820px; margin: 60px auto 0;
+      padding: 32px 32px 48px;
       border-top: 1px solid var(--border);
-      padding-top: 28px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-logo { display: flex; align-items: center; gap: 8px; font-family: var(--font-d); font-size: 16px; letter-spacing: 1px; }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.18); }
+
+    .coffee-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, #ff6b35, #e0522a);
+      color: #fff; font-size: 13px; font-weight: 700;
+      padding: 10px 22px; border-radius: 30px; text-decoration: none;
+      box-shadow: 0 4px 18px rgba(255,107,53,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .coffee-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,107,53,0.45); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .chips { grid-template-columns: 1fr; }
+      .pp-section { padding: 24px 22px; }
+      .nav-inner { padding: 0 20px; }
+      .page { padding: 100px 20px 60px; }
     }
   </style>
 </head>
 <body>
 
+<div class="mesh">
+  <div class="mesh-orb orb1"></div>
+  <div class="mesh-orb orb2"></div>
+</div>
+<div class="grid-overlay"></div>
+
+<!-- NAV -->
 <nav>
-  <span class="nav-logo">🎓</span>
-  <a class="nav-title" href="#">YT EduFocus</a>
-  <span class="nav-ver">v1.1.0</span>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">🎓 YT <span class="logo-accent">EDU</span>FOCUS</a>
+    <a href="../" class="nav-back">← Back to Homepage</a>
+  </div>
 </nav>
 
-<div class="hero">
-  <h1>Privacy <span>Policy</span></h1>
-  <p>YT EduFocus is a Chrome extension that helps you learn on YouTube without distractions. We believe privacy should be the default — not an option you have to hunt for.</p>
-  <p class="meta">Last updated: February 2026 &nbsp;·&nbsp; Effective immediately upon installation</p>
-</div>
+<main class="page">
 
-<div class="tldr">
-  <div class="chip green">
-    <span class="chip-icon">🚫</span>
-    <div class="chip-text">
-      <strong>Zero data collected</strong>
-      <span>We never collect, store, or transmit any personal information.</span>
+  <!-- HERO -->
+  <div class="pp-hero">
+    <div class="pp-eyebrow">📄 Legal Document · YT EduFocus v3.0</div>
+    <h1 class="pp-h1">PRIVACY<br><span>POLICY</span></h1>
+    <p class="pp-intro">YT EduFocus is a browser extension that helps you learn on YouTube without distractions. Privacy is not a feature — it is the foundation of how this extension was built.</p>
+    <p class="pp-meta">LAST UPDATED: FEBRUARY 2026 · EFFECTIVE IMMEDIATELY UPON INSTALLATION</p>
+  </div>
+
+  <!-- TL;DR CHIPS -->
+  <div class="chips">
+    <div class="chip g">
+      <span class="chip-ico">🚫</span>
+      <div class="chip-text">
+        <strong>Zero data collected</strong>
+        <span>We never collect, store, or transmit any personal information of any kind.</span>
+      </div>
+    </div>
+    <div class="chip g">
+      <span class="chip-ico">📡</span>
+      <div class="chip-text">
+        <strong>No external servers</strong>
+        <span>The extension has no backend. Nothing leaves your browser except YouTube requests.</span>
+      </div>
+    </div>
+    <div class="chip g">
+      <span class="chip-ico">💾</span>
+      <div class="chip-text">
+        <strong>Local storage only</strong>
+        <span>Your preferences are stored on your device using Chrome's local storage API.</span>
+      </div>
+    </div>
+    <div class="chip r">
+      <span class="chip-ico">🍪</span>
+      <div class="chip-text">
+        <strong>No cookies, no tracking</strong>
+        <span>No analytics, no ad networks, no third-party scripts of any kind.</span>
+      </div>
     </div>
   </div>
-  <div class="chip green">
-    <span class="chip-icon">📡</span>
-    <div class="chip-text">
-      <strong>No external servers</strong>
-      <span>The extension has no backend. Nothing leaves your browser except YouTube requests.</span>
+
+  <!-- SECTIONS -->
+  <div class="pp-sections">
+
+    <div class="pp-section">
+      <h2><span class="sec-num">1</span> What Information We Collect</h2>
+      <p><span class="badge-none">✅ We collect absolutely nothing.</span></p>
+      <p>YT EduFocus does not collect, transmit, sell, or share any personal data. This includes but is not limited to:</p>
+      <ul>
+        <li>Your watch history, search history, or browsing activity</li>
+        <li>Any personally identifiable information (name, email, IP address)</li>
+        <li>Device identifiers, browser fingerprints, or location data</li>
+        <li>Interaction patterns, click data, or telemetry of any kind</li>
+        <li>Video titles, URLs, or timestamps of videos you watch</li>
+        <li>Notes content or Watch Later list contents</li>
+      </ul>
+      <div class="highlight">
+        <strong>In plain English:</strong> We don't know who you are, what you watch, or how you use the extension. We have no way to know — and we designed it that way intentionally.
+      </div>
     </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">2</span> Local Data Storage</h2>
+      <p>YT EduFocus saves your settings and content using <code>chrome.storage.local</code>. This stores data exclusively on your device and is never synced or transmitted to any server.</p>
+      <table class="data-table">
+        <thead><tr><th>Key</th><th>Type</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><code>focusMode</code></td><td>Boolean</td><td>Whether Focus Mode is active</td></tr>
+          <tr><td><code>autoFocus</code></td><td>Boolean</td><td>Auto-enable on educational videos</td></tr>
+          <tr><td><code>hideComments</code></td><td>Boolean</td><td>Whether comments are hidden</td></tr>
+          <tr><td><code>dimUI</code></td><td>Boolean</td><td>Whether distracting UI is dimmed</td></tr>
+          <tr><td><code>siteBlocker</code></td><td>Boolean</td><td>Whether homepage/shorts blocking is on</td></tr>
+          <tr><td><code>trustedChannels</code></td><td>Array</td><td>Channel names you've whitelisted</td></tr>
+          <tr><td><code>watchLater</code></td><td>Array</td><td>Videos you've saved to Watch Later</td></tr>
+          <tr><td><code>notes</code></td><td>Object</td><td>Your per-video notes (local only)</td></tr>
+          <tr><td><code>studyTime</code></td><td>Object</td><td>Daily study time in seconds (local only)</td></tr>
+          <tr><td><code>streak</code></td><td>Object</td><td>Your current learning streak</td></tr>
+        </tbody>
+      </table>
+      <p>You can clear all of this data at any time by uninstalling the extension, or by clearing extension storage in Chrome's settings.</p>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">3</span> Network Requests</h2>
+      <p>When Focus Mode is active, YT EduFocus makes one type of outbound network request: an anonymous search query to <code>youtube.com/results</code> to populate the educational suggestions sidebar.</p>
+      <ul>
+        <li>The request goes directly to YouTube (Google) — not to any YT EduFocus-controlled server</li>
+        <li>It is made with <code>credentials: 'omit'</code> — your YouTube login cookies are explicitly excluded</li>
+        <li>It is functionally identical to opening YouTube in a private tab and typing a search</li>
+        <li>We do not log, intercept, store, or observe this request in any way</li>
+      </ul>
+      <div class="highlight">
+        Google's privacy policy applies to all requests made to YouTube. See <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.
+      </div>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">4</span> Permissions Explained</h2>
+      <p>YT EduFocus requests only the permissions strictly required to function:</p>
+      <table class="data-table">
+        <thead><tr><th>Permission</th><th>Reason</th><th>Data accessed</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><code>storage</code></td>
+            <td>Save toggle preferences and notes on your device</td>
+            <td>Only the keys listed in Section 2</td>
+          </tr>
+          <tr>
+            <td><code>scripting</code></td>
+            <td>Detect YouTube video category for educational classification</td>
+            <td>Page-level JS variable — read-only, discarded immediately</td>
+          </tr>
+          <tr>
+            <td><code>notifications</code></td>
+            <td>Alert when a Pomodoro session ends or a study milestone is reached</td>
+            <td>None — only fires when you start a session</td>
+          </tr>
+          <tr>
+            <td><code>tabs</code></td>
+            <td>Inject content script into open YouTube tabs without requiring a page reload</td>
+            <td>Only queries youtube.com tabs. No URLs or history stored.</td>
+          </tr>
+          <tr>
+            <td><code>host: youtube.com</code></td>
+            <td>Run content scripts on YouTube watch pages</td>
+            <td>YouTube page DOM (read-only) and anonymous search requests</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>We do <strong style="color:var(--white)">not</strong> request: <code>history</code>, <code>cookies</code>, <code>identity</code>, <code>browsingData</code>, <code>webRequest</code>, or any other sensitive permission.</p>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">5</span> Third-Party Services</h2>
+      <p><span class="badge-none">✅ None whatsoever.</span></p>
+      <p>YT EduFocus does not integrate with any third-party service. Specifically, there is no:</p>
+      <ul>
+        <li>Google Analytics or any equivalent analytics platform</li>
+        <li>Error monitoring or crash reporting service (e.g. Sentry)</li>
+        <li>Advertising network of any kind</li>
+        <li>A/B testing or feature flag service</li>
+        <li>External CDN for JavaScript libraries</li>
+      </ul>
+      <p>The extension is entirely self-contained. Every file that runs is bundled in the extension package you downloaded from the Chrome Web Store.</p>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">6</span> Remote Code</h2>
+      <p>YT EduFocus does not fetch or execute any remote code. Every line of JavaScript that runs is bundled inside the extension package and reviewed by the Chrome Web Store before publication.</p>
+      <p>The educational sidebar fetches YouTube's search results page as <strong style="color:var(--white)">data</strong> (not code) and parses it as JSON. This is equivalent to your browser loading a normal webpage. No code is evaluated or injected from external sources.</p>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">7</span> Children's Privacy</h2>
+      <p>YT EduFocus does not collect any personal information from anyone, including children under the age of 13. Because no data is collected at all, the extension is inherently compliant with COPPA (Children's Online Privacy Protection Act) and similar international legislation.</p>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">8</span> Changes to This Policy</h2>
+      <p>If we make material changes to this privacy policy, we will update the "Last Updated" date at the top of this page and note the changes in the Chrome Web Store update release notes.</p>
+      <p>Given that we collect no data, it would be very unusual for this policy to require substantive changes.</p>
+    </div>
+
+    <div class="pp-section">
+      <h2><span class="sec-num">9</span> Contact</h2>
+      <p>If you have any questions about this privacy policy or the YT EduFocus extension, you can reach out via the Chrome Web Store support tab or by opening an issue on the project's GitHub repository.</p>
+      <p>We are committed to responding to all privacy-related inquiries within 5 business days.</p>
+      <p style="margin-top:16px">
+        <strong style="color:var(--white)">Homepage:</strong> <a href="https://techikmah.github.io/YT-EduFocus/">techikmah.github.io/YT-EduFocus</a>
+      </p>
+    </div>
+
   </div>
-  <div class="chip green">
-    <span class="chip-icon">💾</span>
-    <div class="chip-text">
-      <strong>Local storage only</strong>
-      <span>Your preferences are saved on your device using Chrome's local storage API.</span>
-    </div>
-  </div>
-  <div class="chip red">
-    <span class="chip-icon">🍪</span>
-    <div class="chip-text">
-      <strong>No cookies, no tracking</strong>
-      <span>No analytics, no ad networks, no third-party scripts whatsoever.</span>
-    </div>
-  </div>
-</div>
-
-<div class="content">
-
-  <section>
-    <h2><span class="num">1</span> What Information We Collect</h2>
-    <p><span class="badge-none">✅ We collect absolutely nothing.</span></p>
-    <p>YT EduFocus does not collect, transmit, sell, or share any personal data. This includes but is not limited to:</p>
-    <ul>
-      <li>Your watch history, search history, or browsing activity</li>
-      <li>Any personally identifiable information (name, email, IP address)</li>
-      <li>Device identifiers, browser fingerprints, or location data</li>
-      <li>Interaction patterns, click data, or telemetry of any kind</li>
-    </ul>
-    <div class="highlight">
-      <strong>In plain English:</strong> We don't know who you are, what you watch, or how you use the extension. We have no way to know — and we designed it that way intentionally.
-    </div>
-  </section>
-
-  <section>
-    <h2><span class="num">2</span> Local Data Storage</h2>
-    <p>YT EduFocus saves your settings using <code>chrome.storage.local</code>. This stores data exclusively on your device and is never synced to any external server. The only data stored is:</p>
-    <table>
-      <thead><tr><th>Key</th><th>Value</th><th>Purpose</th></tr></thead>
-      <tbody>
-        <tr><td><code>focusMode</code></td><td>true / false</td><td>Whether Focus Mode is currently enabled</td></tr>
-        <tr><td><code>autoFocus</code></td><td>true / false</td><td>Whether to auto-enable on educational videos</td></tr>
-        <tr><td><code>hideComments</code></td><td>true / false</td><td>Whether the comments section is hidden</td></tr>
-        <tr><td><code>dimUI</code></td><td>true / false</td><td>Whether distracting UI elements are dimmed</td></tr>
-      </tbody>
-    </table>
-    <p style="margin-top:14px">You can clear this data at any time by uninstalling the extension or clearing Chrome's extension storage.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">3</span> Network Requests</h2>
-    <p>When Focus Mode is active, YT EduFocus makes one type of network request: an anonymous search query to <code>youtube.com/results</code> to find educational videos related to what you're watching.</p>
-    <ul>
-      <li>The request goes directly to YouTube (Google) — not to any YT EduFocus-controlled server</li>
-      <li>It is made with <code>credentials: 'omit'</code> — your YouTube login cookies are never included</li>
-      <li>It is functionally identical to opening YouTube and typing a search yourself</li>
-      <li>We do not log, intercept, or observe this request in any way</li>
-    </ul>
-    <div class="highlight">
-      Google's own privacy policy applies to all requests made to YouTube. See <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.
-    </div>
-  </section>
-
-  <section>
-    <h2><span class="num">4</span> Permissions Explained</h2>
-    <p>YT EduFocus requests only the minimum permissions required to function:</p>
-    <table>
-      <thead><tr><th>Permission</th><th>Why it's needed</th><th>Data accessed</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><code>storage</code></td>
-          <td>Save your on/off settings locally on your device</td>
-          <td>Only the 4 boolean settings listed above</td>
-        </tr>
-        <tr>
-          <td><code>scripting</code></td>
-          <td>Detect whether the current video is categorized as educational by YouTube</td>
-          <td>Page-level variable (<code>ytInitialData</code>) — read-only, never transmitted</td>
-        </tr>
-        <tr>
-          <td><code>host: youtube.com</code></td>
-          <td>Run the content script on YouTube watch pages</td>
-          <td>YouTube page DOM (read-only) and anonymous search requests to youtube.com</td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="margin-top:14px">We do <strong>not</strong> request: <code>tabs</code>, <code>history</code>, <code>cookies</code>, <code>identity</code>, <code>browsingData</code>, <code>webRequest</code>, or any other sensitive permission.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">5</span> Third-Party Services</h2>
-    <p><span class="badge-none">✅ None.</span></p>
-    <p>YT EduFocus does not integrate with any third-party service. This means no Google Analytics, no error monitoring, no advertising networks, no CDNs, and no A/B testing tools. The extension is entirely self-contained.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">6</span> Children's Privacy</h2>
-    <p>YT EduFocus does not collect any personal information from anyone, including children under 13. Because we collect no data at all, the extension is inherently compliant with COPPA and similar legislation.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">7</span> Changes to This Policy</h2>
-    <p>If we make material changes to this policy, we will update the "Last updated" date above and notify users via Chrome Web Store update notes. Continued use of the extension after any change constitutes acceptance of the updated policy.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">8</span> Contact</h2>
-    <p>If you have questions about this privacy policy, please reach out via the Chrome Web Store support tab or open an issue on the project's GitHub repository. We respond to all privacy-related inquiries within 5 business days.</p>
-  </section>
-
-</div>
+</main>
 
 <footer>
-  <p>YT EduFocus Chrome Extension &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; v1.1.0</p>
-  <p style="margin-top: 8px"><a href="#">Back to top ↑</a></p>
+  <div class="footer-logo">🎓 YT EduFocus</div>
+  <a href="https://jaafarbinsadiq.gumroad.com/coffee" target="_blank" class="coffee-btn">☕ Support Dev</a>
+  <p class="footer-copy">© 2026 YT EduFocus · Privacy Policy v3.0</p>
 </footer>
 
 </body>
